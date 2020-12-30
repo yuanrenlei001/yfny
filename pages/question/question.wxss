@@ -1,0 +1,15 @@
+page {background: #f2f2f2;}
+.main {position: relative;padding: 0 60rpx;}
+.title {color: #3f3f3f;font-size: 36rpx;line-height: 80rpx;}
+.question {height:150rpx;background: #fff;border-radius: 10rpx;padding: 18rpx;width: 100%;border-bottom: 1px solid #e3e3e3;}
+.questions {height:400rpx;background: #fff;border-radius: 10rpx;padding: 18rpx;width: 100%;border-bottom: 1px solid #e3e3e3;}
+.upload-img-btn {width: 118rpx;height:118rpx;text-align: center;line-height: 118rpx;color: #333;background: #fff;font-size: 50rpx;}
+.text {width:100%;text-align: center;font-size: 24rpx;color: #a4a4a4;margin-top: 30rpx;}
+.weui-uploader__img {width:118rpx;height:118rpx;position: relative;}
+.pic {width:118rpx;display: inline-block;margin: 0 30rpx;}
+.weui-uploader__bd {margin:30rpx 0;}
+.icon-small {position: absolute;z-index: 999;top:0;right:0;}
+.upload {
+  width: 100%;height:98rpx;background-color: #61b343;color: #fff;font-size: 30rpx;text-align: center;line-height: 98rpx;
+  margin-top: 30rpx;border-radius: 20rpx;
+}

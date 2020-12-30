@@ -1,0 +1,40 @@
+<!-- <rich-text nodes="{{detail.content}}"></rich-text> -->
+<!-- 35助农贷 -->
+<!-- 34土壤检测 -->
+<!-- 33飞防 -->
+<view class="main" wx:if="{{id==33}}">
+  <image class="ff" src="https://yfnz2010.cn/app/471.png"></image>
+  <view class="form">
+    <view class="list"><text>农户姓名：</text><input type="text" placeholder="请输入姓名" bindinput="ffname"/></view>
+    <view class="list"><text>地址：</text><input type="text" placeholder="请输入地址" bindinput="ffaddress" /></view>
+    <view class="list"><text>联系电话：</text><input type="text" placeholder="请输入电话" bindinput="ffphone" /></view>
+    <view class="list"><text>种植品种：</text><input type="text" placeholder="请输入品种" bindinput="ffzzpz" /></view>
+    <view class="list"><text>种植面积：</text><input type="text" placeholder="请输入种植面积" bindinput="ffzzmj" /></view>
+    <view class="list"><text>实际飞防面积：</text><input type="text" placeholder="请输入面积" bindinput="ffmj" /></view>
+    <view class="list"><text>每亩用水量（L）：</text><input type="text" placeholder="请输入用水量" bindinput="ffysl" /></view>
+    <view class="list"><text>预约时间（3-5天）</text><input type="text" placeholder="请输入时间" bindinput="fftime" /></view>
+    <view class="btn" bindtap="ffadd">提 交</view>
+  </view>
+</view>
+<view class="main" wx:if="{{id==34}}">
+  <image class="trjc" src="https://yfnz2010.cn/app/472.jpeg"></image>
+  <view class="form">
+    <view class="list"><text>农户名称：</text><input type="text" placeholder="请输入名称" bindinput="trname"/></view>
+    <view class="list"><text>地块位置：</text><input type="text" placeholder="请输入位置" bindinput="traddress" /></view>
+    <view class="list"><text>种植作物：</text><input type="text" placeholder="请输入作物" bindinput="trspecies" /></view>
+    <view class="list"><text>种植面积：</text><input type="text" placeholder="请输入种植面积" bindinput="trarea" /></view>
+    <view class="list"><text>取土时间</text><input type="text" placeholder="请输入时间" bindinput="trtake_time" /></view>
+    <view class="btn" bindtap="tradd">提 交</view>
+  </view>
+</view>
+<view class="main" wx:if="{{id==35}}">
+  <image class="dk" src="https://yfnz2010.cn/app/470.png"></image>
+  <view class="form">
+    <view class="list"><text>姓名：</text><input type="text" placeholder="请输入姓名" bindinput="zndname" /></view>
+    <view class="list"><text>联系电话：</text><input type="text" placeholder="请输入电话" bindinput="zndphone"/></view>
+    <view class="list"><text>经营地址：</text><input type="text" placeholder="请输入地址" bindinput="zndaddress" /></view>
+    <view class="list"><text>从事产业：</text><input type="text" placeholder="请输入产业" bindinput="zndindustry"/></view>
+    <view class="list"><text>申请贷款金额：</text><input type="text" placeholder="请输入金额" bindinput="zndquota" /></view>
+    <view class="btn" bindtap="zndadd">提 交</view>
+  </view>
+</view>

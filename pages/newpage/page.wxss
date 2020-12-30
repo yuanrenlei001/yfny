@@ -1,0 +1,3 @@
+/* pages/newpage/page.wxss */
+.bg {width: 100%;text-align: center;}
+image {width: 371rpx;height:504rpx;position: relative;margin-top: 50%;top:-252rpx;}

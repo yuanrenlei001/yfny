@@ -1,0 +1,23 @@
+<view  class="main" style="padding:0 60rpx;">
+  <view class="zztitle" style="padding: 50rpx 0;border-bottom: 1px solid #e0e0e0;">
+    <image class="zztitle01" src="/images/icon01.png"></image>
+    <text class="zztitle02">农联合组织 </text>
+    <image class="zztitle03" src="/images/right.png"></image>
+    <text class="zztitle04">{{text}} </text>
+  </view>
+  <view class="contents">
+    <view class="detailtitle">{{list.name}}</view>
+    <view class="detailtitle01">{{list.person}}</view>
+    <view class="sort">
+      <view class="sortLeft">
+        <view class="sortLeft01">会员类别</view>
+        <view class="sortLeft02">{{list.category}}</view>
+      </view>
+      <view class="sortRight">
+        <view class="sortLeft01">从事生产或服务的农业领域</view>
+        <view class="sortLeft02">{{list.field}}</view>
+      </view>
+    </view>
+    <rich-text nodes="{{content}}" class="detail"></rich-text>
+  </view>
+</view>

@@ -1,0 +1,22 @@
+<view class="main">
+  <view class="title">{{title}}</view>
+  <view class="title">详细阐述</view>
+  <textarea class="questions" placeholder="请详细回答问题，以便提问者能更好的理解" value="{{question2}}" bindblur='bindTextAreaBlur2' name="textarea"></textarea>
+  <view class="weui-uploader">
+  <view class="img-v weui-uploader__bd">
+    <view class='pic' wx:for="{{imgs}}" wx:for-item="item" wx:key="*this">
+        <image class='weui-uploader__img '
+                src="{{item}}"
+                data-index="{{index}}" mode="aspectFill" bindtap="previewImg">
+                  <icon class="icon-small" type="cancel" size="23"  data-index="{{index}}" catchtap="deleteImg"></icon>
+        </image>
+    </view>
+     
+      <!-- 用来提示用户上传图片 -->
+      <view class="weui-uploader__input-box pic" bindtap="chooseImg"> </view>
+  </view>
+  <view class="upload-img-btn" wx:if="{{show}}" bindtap="chooseImg" type='primary'>+</view >
+    <view class="text">添加配图将会得到更多人的回答配图限定不超过3张</view>
+</view>
+<view bindtap="upload" class="upload">提 交</view>
+</view>

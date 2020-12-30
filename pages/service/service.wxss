@@ -1,0 +1,6 @@
+/* pages/service/service.wxss */
+page {background-color: #fff;}
+.main {padding: 0 24rpx;}
+.title {font-size: 18px;text-align: center;margin: 20rpx;}
+.titles {color: #333;font-weight: bold;font-size: 12px;margin-bottom: 20rpx;}
+.text {color: #333;font-size: 12px;margin-bottom: 20rpx;text-align: justify;}

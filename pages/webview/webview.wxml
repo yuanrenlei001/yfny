@@ -1,0 +1,2 @@
+<!--pages/webview/webview.wxml-->
+<web-view src="https://www.yfnz2010.cn/index.php?s=car/index/index.html"></web-view>

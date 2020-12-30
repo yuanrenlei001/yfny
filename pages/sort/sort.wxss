@@ -1,0 +1,14 @@
+.banner {width: 100%;height:270rpx;}
+page {background-color: #f2f2f2;}
+.banner image {width: 100%;height:100%;}
+.main {position: relative;padding: 36rpx 45rpx;}
+.list {width: 604rpx;height:334rpx;background: #fff;border-radius: 20rpx;padding: 28rpx;position: relative;margin-bottom: 20rpx;}
+.list image {width: 605rpx;height:229rpx;}
+.listText01 {color: #353535;font-size: 30rpx;font-weight:bold;
+  white-space:nowrap; 
+  text-overflow:ellipsis; 
+  -o-text-overflow:ellipsis; 
+  overflow: hidden;
+}
+.listText03 {position: absolute;bottom:28rpx;left:28rpx;font-size: 24rpx;color: #b0b0b0;}
+.listText04 {position: absolute;bottom:28rpx;right:28rpx;font-size: 24rpx;color: #b0b0b0;}

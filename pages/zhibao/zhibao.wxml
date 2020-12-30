@@ -1,0 +1,42 @@
+<view class="main">
+  <view class="tab">
+    <view bindtap="sort" data-type="all" class="{{active =='all' ? 'active':''}}">全部</view>
+    <view bindtap="sort" data-type="question" class="{{active =='question' ? 'active':''}}">我的回答</view>
+    <view bindtap="sort" data-type="reply" class="{{active =='reply' ? 'active':''}}">我的提问</view>
+  </view>
+  <view class="body" wx:if="{{active == 'all'}}" style="padding-bottom:100rpx;">
+    <view class="img"><image src="https://yfnz2010.cn/app/all.png"></image></view>
+      <navigator class="list" wx:for="{{list}}" url="/pages/question-detail/question-detail?id={{item.id}}">
+        <view class="title">{{item.title}}</view>
+        <view class="time">{{item.add_time_date}}</view>
+        <view class="num">
+          <view><image src="/images/yan.png"></image> {{item.reply_total}}</view>
+          <view><image src="/images/see.png"></image> {{item.views}}</view>
+        </view>
+      </navigator>
+      
+  </view>
+  <view class="body" wx:if="{{active == 'question'}}">
+    <view class="img"><image src="https://yfnz2010.cn/app/huida.png"></image></view>
+    <navigator class="list" wx:for="{{list}}" url="/pages/question-detail/question-detail?id={{item.id}}">
+        <view class="title">{{item.question.title}}</view>
+        <view class="time">{{item.add_time_date}}</view>
+        <view class="num">
+          <view><image src="/images/yan.png"></image> {{item.question.views}}</view>
+          <!-- <view><image src="/images/see.png"></image> {{item.question.views}}</view> -->
+        </view>
+      </navigator>
+  </view>
+  <view class="body" wx:if="{{active == 'reply'}}">
+    <view class="img"><image src="https://yfnz2010.cn/app/tiwen.png"></image></view>
+    <navigator class="list" wx:for="{{list}}" url="/pages/question-detail/question-detail?id={{item.id}}">
+        <view class="title">{{item.title}}</view>
+        <view class="time">{{item.add_time_date}}</view>
+        <view class="num">
+          <view><image src="/images/yan.png"></image> {{item.reply_total}}</view>
+          <view><image src="/images/see.png"></image> {{item.views}}</view>
+        </view>
+      </navigator>
+  </view>
+  <view class="tiwen" wx:if="{{active == 'all'}}" bindtap="question">我要提问</view>
+</view>

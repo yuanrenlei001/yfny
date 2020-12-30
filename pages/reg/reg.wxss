@@ -1,0 +1,114 @@
+.a-input{
+  padding: 0;
+}
+page{
+  background: #fff;
+  position: relative;
+  height: 100vh;
+}
+.content {
+  padding: 30% 40rpx 0 40rpx;
+}
+/* .content .mobile{
+  width: 100%;
+  margin: 20rpx 0;
+  border-bottom: solid 1px #eee;
+} */
+.content input{
+  font-size: 28rpx;
+  color: #4e4e4e;
+  height: 40px; 
+  line-height: 40px;
+}
+.content .code{
+  margin: 20rpx 0;
+  border-bottom: solid 1px #eee;
+  position: relative;
+}
+.content .code .verify{
+  width: 63%; 
+}
+.content .code .verify-sub{
+  border: solid 1px #ff6482; 
+  color: #ff6482;
+  width: 35%;
+  height: 35px; 
+  line-height: 35px;
+  border-radius: 10rpx;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.content .code .verify-sub.sub-disabled{
+  border: solid 1px #eee; 
+  color: #a6a6a6
+}
+.content .submit{
+  position: absolute;
+  left: 20rpx;
+  right: 20rpx;
+  bottom: 34rpx;
+  height: 90rpx;
+  line-height: 90rpx;
+  font-size: 32rpx;
+}
+
+/**
+授权登录
+*/
+.user-login {
+padding-top: 30%;
+}
+.user-login button {
+margin-top: 30rpx;
+}
+.zhuce {
+  display: inline-block;
+    margin-bottom: 0;
+    padding: 0.5em 1em;
+    vertical-align: middle;
+    font-size: 28rpx;
+    font-weight: normal;
+    text-align: center;
+    white-space: nowrap;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 0;
+    cursor: pointer;
+    outline: none;
+    -webkit-appearance: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-transition: background-color 300ms ease-out, border-color 300ms ease-out;
+    transition: background-color 300ms ease-out, border-color 300ms ease-out;
+    color: #9fc53c !important;
+    background-color: #ffc4d8;
+    border-color: #fb9bbc;
+}
+
+.label {
+  display: inline-block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.mobile {
+  display: block;
+  width: 100%;
+  padding: 0.5em;
+  font-size: 1.6rem;
+  line-height: 1.2;
+  color: #555555;
+  vertical-align: middle;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  border-radius: 0;
+  -webkit-appearance: none;
+  -webkit-transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+  transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+}

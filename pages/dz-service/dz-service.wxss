@@ -1,0 +1,10 @@
+page {background-color: #f2f2f2;}
+.sort {
+  width: 690rpx;
+  height:330rpx;
+  position: relative;
+  left:50%;
+  margin-left: -345rpx;
+  margin-top: 20rpx;
+}
+.sort image {width: 100%;height:100%;}

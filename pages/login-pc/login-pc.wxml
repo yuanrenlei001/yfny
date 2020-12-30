@@ -1,0 +1,16 @@
+
+<view  class="content">
+  <view>还没有账号？ <navigator url="../reg/reg" class="zhuce">注册</navigator></view>
+  <form bindsubmit="formSubmit">
+    <view style="margin-top:20rpx;">
+      <view class="label">登录账号</view>
+      <input type="text" placeholder="请输入您的账号"  class="mobile" bindinput="bind_name"/>
+    </view>
+    <view style="margin-top:50rpx;">  
+      <view class="label">登录密码</view>
+      <input type="text" placeholder="请输入您的密码"  class="mobile" bindinput="bind_password"/>
+    </view>
+    
+    <button type="primary" size="mini" class="submit" open-type="getUserInfo" bindgetuserinfo="get_user_info_event">登 录</button>
+  </form>
+</view>

@@ -1,0 +1,8 @@
+<view class="main">
+  <view class="title">{{detail.title}}</view>
+  <view class="text" style="margin-bottom:20rpx;">
+    <text>发布：{{detail.add_time}}</text>
+    <text>阅读量：{{detail.access_count}}</text>
+  </view>
+  <rich-text nodes='{{img}}'></rich-text>
+</view>

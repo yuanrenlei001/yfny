@@ -1,0 +1,15 @@
+<view class="bg"><image src="https://yfnz2010.cn/app/1222.png"></image></view>
+<view class="top"><image src="https://yfnz2010.cn/app/1214.jpeg"></image></view>
+<view class="ul">
+  <view class="li">
+    <navigator url="/pages/structure/structure" class='sort'><image src="https://www.yfnz2010.cn/app/icon07.png"></image><view class="text">农合联</view></navigator>
+    <view bindtap="goUrl" data-type='zhibao' class='sort'><image src="https://www.yfnz2010.cn/app/icon04.png"></image><view class="text">植保问答</view></view>
+    <view bindtap="goUrl" data-type='dz_service' class='sort'><image src="https://www.yfnz2010.cn/app/icon03.png"></image><view class="text">定制服务</view></view>
+    <view bindtap="goUrl" data-type='sort' class='sort'><image src="https://www.yfnz2010.cn/app/icon05.png"></image><view class="text">方案推介</view></view>
+    <view bindtap="goUrl"  data-type='index' class='sort'><image src="https://www.yfnz2010.cn/app/icon01.png"></image><view class="text">农资商店</view></view>
+    <view bindtap="goUrl" class='sort'  data-type='store'><image src="https://www.yfnz2010.cn/app/icon02.png"></image><view class="text">农产品商店</view></view>
+    <view bindtap="goUrl" data-type='news' class='sort'><image src="https://www.yfnz2010.cn/app/icon06.png"></image><view class="text">资讯发布</view></view>
+    <navigator  class='sort'><image src="https://www.yfnz2010.cn/app/icon08.png"></image><view class="text"></view></navigator>
+  </view>
+</view>
+<view class="go_vip" bindtap="go_vip">注册成为会员</view>

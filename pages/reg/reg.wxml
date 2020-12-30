@@ -1,0 +1,17 @@
+
+<view  class="content">
+  <form bindsubmit="formSubmit">
+    <view style="margin-top:20rpx;">
+      <view class="label">用户账号</view>
+      <input type="text" placeholder="请输入您的账号"  class="mobile" bindinput="bind_name"/>
+    </view>
+    <view style="margin-top:50rpx;">  
+      <view class="label">用户密码</view>
+      <input type="text" placeholder="请输入您的密码"  class="mobile" bindinput="bind_password"/>
+    </view>
+    <view style="margin-top:50rpx;">  
+      <navigator url="../service/service" class="label" style="color:red;">服务协议</navigator>
+    </view>
+    <button type="primary" size="mini" class="submit" open-type="getUserInfo" bindgetuserinfo="get_user_info_event">注册</button>
+  </form>
+</view>

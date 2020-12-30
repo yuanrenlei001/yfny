@@ -1,0 +1,9 @@
+<view  class="main" style="padding:0 60rpx;">
+  <view class="zztitle">
+    <image class="zztitle01" src="/images/icon01.png"></image>
+    <text class="zztitle02">组织架构 </text>
+    <image class="zztitle03" src="/images/right.png"></image>
+    <text class="zztitle04">{{text}} </text>
+  </view>
+  <navigator wx:for="{{list}}" class="list" url="/pages/structure02/structure02?id={{item.id}}&text={{item.name}}"><view class="yuan"></view><view class="text">{{item.name}}</view></navigator>
+</view>

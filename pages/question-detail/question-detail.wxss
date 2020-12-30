@@ -1,0 +1,24 @@
+.main {padding: 60rpx;position: relative;}
+page {background-color: #fff;}
+.title {font-size: 34rpx;color: #000;font-weight: bold;}
+.user {font-size: 26rpx;color:#76b372;line-height: 70rpx;}
+.num view {display: inline-block;margin: 0 10rpx;color: #b0b0b0;}
+.num image {width:30rpx;height:23rpx;vertical-align: middle;}
+.body {position: relative;}
+.time {position: absolute;right:0;bottom:0;color: #b0b0b0;font-size: 24rpx;}
+.content {padding: 50rpx;background: #f5f5f5;position: relative;margin-top: 38rpx;}
+.text {font-size: 24rpx;color: #505050;line-height: 48rpx;text-align: justify;}
+.img {width: 160rpx;height:120rpx;margin-top: 20rpx;display: inline-block;margin: 0 8rpx;}
+.reply {position: relative;margin-top: 65rpx;}
+.huida {font-size: 30rpx;color: #76b372;font-weight: bold;}
+.hr {width: 540rpx;border-bottom: 1px solid #c5d0c4;position: absolute;top:20rpx;right:0;}
+.userImg {margin-top: 30rpx;position: relative;}
+.userLeft {float:left;width: 110rpx;text-align: center;}
+.userLeft image {width: 96rpx;height:96rpx;border-radius: 50%;}
+.userRight {margin-left: 130rpx;height:96rpx;position: relative;}
+.name {font-weight: bold;color: #545454;font-size: 24rpx;}
+.type {position: absolute;left:0;bottom:0;font-size: 24rpx;color: #b0b0b0;}
+.zan {position: absolute;right:0;bottom:0;font-size: 24rpx;color: #b0b0b0;}
+.zan image{width: 30rpx;height:30rpx;}
+.add {position: fixed;bottom:10%;right:60rpx;z-index: 999;width: 150rpx;height:150rpx;}
+.add image{width: 150rpx;height:150rpx;}

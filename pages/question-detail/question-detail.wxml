@@ -1,0 +1,36 @@
+<view class="main">
+  <view class="body">
+    <view class="title">{{detail.title}}</view>
+    <view class="user">提问人：{{detail.user.nickname}}</view>
+    <view class="num">
+            <view><image src="/images/yan.png"></image> {{detail.reply_total}}</view>
+            <view><image src="/images/see.png"></image> {{detail.views}}</view>
+    </view>
+    <view class="time">{{detail.add_time_date}}</view>
+  </view>
+  <view class="content">
+    <view class="text">{{detail.content}}</view>
+<image wx:for="{{detail.images}}" src="{{url+item}}" bindtap="previewImg" data-index="{{index}}" class="img"></image>
+  </view>
+  <view class="reply">
+    <view class="huida">回答</view>
+    <view class="hr"></view>
+    <view class="list" wx:for="{{plList}}">
+      <view class="userImg">
+        <view class="userLeft"><image src="{{item.user.avatar}}"></image></view>
+        <view class="userRight">
+          <view class="name">{{item.user.nickname}}</view>
+          <view class="type" wx:if="{{item.user.type==1}}">普通会员/未认证</view>
+          <view class="type" wx:if="{{item.user.type==2}}" style="color:#ff9c00;">农资导师/已认证</view>
+        </view>
+        <view class="zan" bindtap="zan" wx:if="{{item.is_like!==1}}" data-id="{{item.id}}"><image src="/images/zan.png"></image> {{item.like_total}}</view>
+        <view class="zan" bindtap="zan" wx:if="{{item.is_like==1}}" data-id="{{item.id}}"><image src="/images/zans.png"></image> {{item.like_total}}</view>
+      </view>
+      <view class="content">
+        <view class="text">{{item.content}}</view>
+        <image src="{{url+imgs}}" wx:for="{{item.img}}" wx:for-item="imgs" class="img"></image>
+      </view>
+    </view>
+  </view>
+  <navigator url="/pages/my-reply/my-reply?title={{detail.title}}&userid={{userid}}&id={{detail.id}}" class="add"><image  src="/images/add.png"></image></navigator>
+</view>

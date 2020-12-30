@@ -1,0 +1,15 @@
+.main {padding: 0 72rpx;}
+page {background-color: #f2f2f2;}
+.title {font-size: 36rpx;color: #353535;width: 100%;text-align: center;
+  white-space:nowrap; 
+  text-overflow:ellipsis; 
+  -o-text-overflow:ellipsis; 
+  overflow: hidden;
+  font-weight: bold;
+  padding-top: 48rpx;
+}
+.text {width: 100%;border-bottom: 1px solid #cbcbcb;color: #cbcbcb;font-size: 22rpx;text-align: center;
+  padding: 30rpx 0;
+}
+.text text {margin: 0 5rpx;}
+.rich-img {width:606rpx;}

@@ -1,0 +1,12 @@
+<view  class="main" style="padding:0 60rpx;">
+  <view class="zztitle" style="padding: 50rpx 0">
+    <image class="zztitle01" src="/images/icon01.png"></image>
+    <text class="zztitle02">农联合组织 </text>
+    <image class="zztitle03" src="/images/right.png"></image>
+    <text class="zztitle04">{{text}} </text>
+  </view>
+</view>
+<view class="num">农合联会员单位（ <text style="color:#ff3300;">{{total}}</text> 个）</view>
+<view  class="main" style="padding:0 60rpx;">
+  <navigator class="list" wx:for="{{list}}" url="/pages/structure03/structure03?id={{item.id}}&text={{item.name}}"><view class="yuan"></view><view class="text">{{item.name}}</view></navigator>
+</view>

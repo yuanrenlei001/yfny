@@ -1,0 +1,12 @@
+/* pages/dz-detail/dz-detail.wxss */
+.main {width: 100%;height:100%;position: relative;}
+.main .ff {width: 100%;height:3359rpx;}
+.main .trjc {width: 100%;height:2207rpx;}
+.main .dk {width: 100%;height:2421rpx;}
+.form {width:605rpx;left:60rpx;position: absolute;bottom:100rpx;}
+.list {height:80rpx;line-height: 80rpx;font-size: 26rpx;position: relative;border-bottom: 1px solid #ddd;}
+.list text {color: #505050;}
+.list input {position: absolute;height:80rpx;text-align: right;top:0;right:0;}
+.btn {width: 600rpx;height:92rpx;text-align: center;line-height: 92rpx;color: #fff;font-size: 30rpx;background-color: #629f30;
+  margin-top: 30rpx;border-radius: 10rpx;
+}

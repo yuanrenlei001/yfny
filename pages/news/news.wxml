@@ -1,0 +1,10 @@
+<view class="banner"><image src="https://www.yfnz2010.cn/app/zxfb.jpg"></image></view>
+<view class="main">
+  <navigator class="list" wx:for="{{list}}" url="/pages/sort-detail/sort-detail?id={{item.id}}">
+    <view class="listText01">{{item.title}}</view>
+    <view class="listText02">
+        <text class="listText03">{{item.add_time}}</text>
+        <text class="listText04">阅读量：{{item.access_count}}</text>
+      </view>
+  </navigator>
+</view>

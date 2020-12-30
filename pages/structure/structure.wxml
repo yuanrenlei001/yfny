@@ -1,0 +1,38 @@
+<view class="top">
+  <view bindtap="sort" data-type='农合会介绍'  class="{{active=='农合会介绍'?'active':''}}">农合会介绍</view>
+  <view bindtap="sort" data-type='组织架构' class="{{active=='组织架构'?'active':''}}">组织架构</view>
+</view>
+<view wx:if="{{active=='农合会介绍'}}" class="main">
+  <view class="banner">
+    <image class="banners" src="https://yfnz2010.cn/app/1320.png"></image>
+    <image class="bannerLogo" src="https://yfnz2010.cn/app/1301.png"></image>
+  </view>
+  <view class="body">
+    <view class="title">农合联组织</view>
+      <view class="content">
+        宁波市农民合作经济组织联合会（农合联）的业务主管单位是市农村工作办公室，登记管理机关是市民政局，接受省农民合作经济组织联合会的业务指导和监督，是非营利性、地方性、联合性社会团体。全市自下而上组建市县镇三级农合联，上级农合联承担对下级农合联的指导、协调、服务和监督等职责。目前全市农民合作经济组织体系包含10个县级农合联，149个镇级农合联（含19个县级农合联派出办事处、27个特色产业农合联），共拥有会员5800余个。
+      </view>
+    <view class="title">宁波市供销合作社联合社</view>
+      <view class="content">
+        宁波市供销合作社联合社已具有50年的发展历史。
+    宁波市社于1993年组建宁波海田集团总公司，1994年获
+    得进出口经营权，成为内外贸并举的大型贸工农集团。
+    1998年起，宁波市社按产权多元化、用工市场化方针，
+    对所属企业实行产权用工制度的改革，全市社系统现有
+    8家县级供销社，28个基层供销社，县以上控股企业18
+    家，参股企业22家。2011年，宁波市社再次荣获全国总
+    社综合业绩考核一等奖，列计划单列市和副省级省会城
+    市第2位。
+      </view>
+      <view class="weixin">微信公众号：宁波农合联</view>
+      <view class="zhuban">主办：宁波市供销社（宁波市农合联执委会）</view>
+      <view class="code">
+        <image class="codeLeft" src="https://yfnz2010.cn/app/siteqrcode.jpg"></image>
+        <image class="codeRight" src="https://yfnz2010.cn/app/1321.png"></image>
+      </view>
+  </view>
+</view>
+<view wx:if="{{active=='组织架构'}}" class="main" style="padding:0 60rpx;">
+  <view class="zztitle"><image src="/images/icon01.png"></image>组织架构</view>
+  <navigator wx:for="{{list}}" class="list" url="/pages/structure01/structure01?id={{item.id}}&text={{item.name}}"><image class="icon" src="/images/icon02.png"></image><text>{{item.name}}</text><image class="more" src="/images/right.png"></image></navigator>
+</view>

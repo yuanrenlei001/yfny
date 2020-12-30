@@ -1,0 +1,1 @@
+<navigator class="sort" url="/pages/dz-detail/dz-detail?id={{item.id}}" wx:for="{{list}}"><image src="{{item.images[0]}}"></image></navigator>
